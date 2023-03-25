@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mishka - магазин вязаных вещей и игрушек ручной работы.">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="fonts/open-sans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans_bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Магазин вязаных вещей и игрушек ручной работы "Mishka"</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header no-js">
+      <div class="container">
+        <nav class="header__nav header__nav--inner">
+          <a class="header__logo-link link-opacity" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+              <img class="header__logo" src="img/svg/logo-mobile.svg" width="86" height="35"
+                alt="Логотип сайта магазина Mishka.">
+            </picture>
+          </a>
+          <button class="header__nav-toggle" type="button" aria-label="Открыть/закрыть меню.">
+            <span class="header__toggle-line"></span>
+          </button>
+          <div class="header__nav-wrapper">
+            <ul class="header__site-list">
+              <li class="header__site-item">
+                <span class="header__site-link">Каталог товаров</span>
+              </li>
+              <li class="header__site-item">
+                <a class="header__site-link link-opacity" href="form.html">Вязание на&nbsp;заказ</a>
+              </li>
+            </ul>
+            <ul class="header__user-list">
+              <li class="header__user-item">
+                <a class="header__user-link" href="#" aria-label="Поиск по сайту.">
+                  <svg class="header__user-icon" width="18" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#search"></use>
+                  </svg>
+                  <span class="header__user-text header__user-text--search">Поиск по&nbsp;сайту</span>
+                </a>
+              </li>
+              <li class="header__user-item header__user-item--the-last">
+                <a class="header__user-link" href="#">
+                  <svg class="header__user-icon header__user-icon--basket" width="21" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#basket"></use>
+                  </svg>
+                  <span class="header__user-text">Корзина: пока пуста</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__news-list">
+              <li class="header__news-item">
+                <a class="header__news-link link-opacity" href="#">Новые поступления</a>
+              </li>
+              <li class="header__news-item">
+                <a class="header__news-link link-opacity" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="header__nav-delivery">Бесплатная доставка по&nbsp;России</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="main-content__hero hero wave wave--white">
+        <div class="container">
+          <h1 class="hero__title title">Каталог товаров</h1>
+        </div>
+      </section>
+
+      <section class="main-content__catalog catalog container">
+        <h2 class="visually-hidden">Список товаров.</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/bunny-tablet.webp 1x, img/bunny-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/bunny-mobile.webp 1x, img/bunny-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)"
+                  srcset="img/bunny-desktop.jpg 1x, img/content/bunny-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/bunny-tablet.jpg 1x, img/bunny-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/bunny-mobile.jpg" srcset="img/bunny-mobile@2x.jpg 2x" width="260"
+                  height="195" alt="Вязаный заяц.">
+              </picture>
+            </a>
+            <div class="catalog__product-wrapper">
+              <a class="catalog__product-title link-opacity" href="#">
+                Зайчик-попрыгайчик
+              </a>
+              <p class="catalog__product-description">Рост 30&nbsp;см, вес 200&nbsp;г</p>
+              <div class="catalog__cost-wrapper">
+                <span class="catalog__cost">1&nbsp;200&nbsp;руб.</span>
+                <button class="catalog__product-button modal-button" type="button"
+                  aria-label="Добавить товар в корзину.">
+                  <svg class="catalog__button-icon" width="21" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#basket"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/basket-desktop.webp 1x, img/basket-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/basket-tablet.webp 1x, img/basket-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/basket-mobile.webp 1x, img/basket-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)"
+                  srcset="img/basket-desktop.jpg 1x, img/content/basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/basket-tablet.jpg 1x, img/basket-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/basket-mobile.jpg" srcset="img/basket-mobile@2x.jpg 2x" width="260"
+                  height="195" alt="Вязаная корзинка.">
+              </picture>
+            </a>
+            <div class="catalog__product-wrapper">
+              <a class="catalog__product-title link-opacity" href="#">
+                Корзинка для белья
+              </a>
+              <p class="catalog__product-description">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
+              <div class="catalog__cost-wrapper">
+                <span class="catalog__cost">690&nbsp;руб.</span>
+                <button class="catalog__product-button modal-button" type="button"
+                  aria-label="Добавить товар в корзину.">
+                  <svg class="catalog__button-icon" width="21" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#basket"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/big-basket-desktop.webp 1x, img/big-basket-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/big-basket-tablet.webp 1x, img/big-basket-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/big-basket-mobile.webp 1x, img/big-basket-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)"
+                  srcset="img/big-basket-desktop.jpg 1x, img/content/basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/big-basket-tablet.jpg 1x, img/big-basket-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/big-basket-mobile.jpg" srcset="img/big-basket-mobile@2x.jpg 2x"
+                  width="260" height="195" alt="Большая вязаная корзинка с мягкими игрушками в ней.">
+              </picture>
+            </a>
+            <div class="catalog__product-wrapper">
+              <a class="catalog__product-title link-opacity" href="#">
+                Большая корзинка для&nbsp;игрушек
+              </a>
+              <p class="catalog__product-description">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
+              <div class="catalog__cost-wrapper">
+                <span class="catalog__cost">1&nbsp;500&nbsp;руб.</span>
+                <button class="catalog__product-button modal-button" type="button"
+                  aria-label="Добавить товар в корзину.">
+                  <svg class="catalog__button-icon" width="21" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#basket"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="container">
+        <section class="main-content__video video">
+
+          <div class="video__container">
+            <h2 class="video__title">Процесс производства</h2>
+            <div class="video__wrapper">
+              <div class="video__inner">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img class="video__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260"
+                    height="150" alt="Видео производства вязаной корзинки.">
+                </picture>
+                <a class="video__play" href="#" aria-label="Запустить показ видео."></a>
+              </div>
+            </div>
+            <p class="video__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное
+              видео
+              о&nbsp;том, как появляются наши товары.</p>
+            <a class="video__button button" href="form.html">Сделать заказ</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="footer__logo-link" href="index.html">
+            <span class="visually-hidden">Логотип сайта Mishka.</span>
+            <svg class="footer__logo" width="102" height="34">
+              <use xlink:href="img/sprite/sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+          <div class="footer__social-wrapper">
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Мы во Вконтакте.</span>
+                  <svg width="28" height="17">
+                    <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Мы на Youtube.</span>
+                  <svg width="25" height="19">
+                    <use xlink:href="img/sprite/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="tg://resolve?domain=htmlacademy">
+                  <span class="visually-hidden">Мы в Telegram.</span>
+                  <svg width="21" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="footer__copyright-academy">Разработано</span>
+            <svg class="footer__academy-icon" width="27" height="34">
+              <use xlink:href="img/sprite/sprite.svg#logo_academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__container">
+        <h2 class="modal__title title title--subtitle">Добавить в&nbsp;корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__group">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__group-list">
+              <li class="modal__group-item">
+                <label class="modal__label">
+                  <input class="visually-hidden modal__input" type="radio" name="size" value="S" checked>
+                  <span class="modal__radio">S</span>
+                </label>
+              </li>
+              <li class="modal__group-item">
+                <label class="modal__label">
+                  <input class="visually-hidden modal__input" type="radio" name="size" value="M">
+                  <span class="modal__radio">M</span>
+                </label>
+              </li>
+              <li class="modal__group-item">
+                <label class="modal__label">
+                  <input class="visually-hidden modal__input" type="radio" name="size" value="L">
+                  <span class="modal__radio">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__submit" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>

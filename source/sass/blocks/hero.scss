@@ -1,0 +1,27 @@
+.hero {
+  padding: 72px 0;
+
+  background-color: $color-white-smoke-1;
+
+  @media (min-width: $vp-768) {
+    padding: 36px 0 74px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 36px 0 97px 0;
+  }
+
+  &::before {
+    @media (min-width: $vp-1150) {
+      background-size: 1150px 36px;
+      height: 34px;
+      bottom: -17px;
+      width: 200vw;
+      left: -100vw;
+    }
+  }
+}
+
+.hero__title {
+  text-align: center;
+}

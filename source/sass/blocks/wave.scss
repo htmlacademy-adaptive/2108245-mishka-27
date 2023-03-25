@@ -1,0 +1,74 @@
+.wave {
+  padding-bottom: 42px;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 96px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(-100vw - 15px);
+    width: 250vw;
+    min-width: 320px;
+
+    height: 6px;
+
+    background-image: url("../img/svg/wave-grey.svg");
+    background-repeat: repeat-x;
+
+    @media (min-width: $vp-768) {
+      height: 17px;
+      background-size: 772px 17px;
+      transform: translateX(-1px);
+    }
+
+    @media (min-width: $vp-1150) {
+      height: 23px;
+      width: 100%;
+      left: 0;
+      background-size: 1050px 23px;
+      transform: unset;
+    }
+  }
+}
+
+.wave--white {
+  position: relative;
+
+  &::before {
+    display: none;
+
+    @media (min-width: $vp-768) {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: -1px;
+      z-index: 2;
+
+      width: 100vw;
+      min-width: 320px;
+      height: 24px;
+      background-size: 770px 24px;
+
+      background-image: url("../img/svg/wave-white.svg");
+      background-repeat: repeat-x;
+    }
+
+    @media (min-width: $vp-1150) {
+      bottom: -20px;
+      left: 12px;
+
+      height: 38px;
+
+      background-size: 1250px 39px;
+    }
+  }
+}

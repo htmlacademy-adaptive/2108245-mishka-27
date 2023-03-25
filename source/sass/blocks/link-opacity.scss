@@ -1,0 +1,13 @@
+.link-opacity {
+  transition: opacity 0.3s ease-in-out;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}
