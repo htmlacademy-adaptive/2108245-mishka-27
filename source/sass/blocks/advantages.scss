@@ -1,10 +1,10 @@
 .advantages__title {
-  margin: 0 auto 29px auto;
   max-width: 549px;
+  margin: 0 auto 29px auto;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 41px;
     max-width: unset;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $vp-1150) {
@@ -13,31 +13,36 @@
 }
 
 .advantages__list {
-  padding: 0;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, max(260px));
-  gap: 29px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+
   list-style-type: none;
-  color: $color-default-black;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  justify-content: center;
+  color: $color-default-black;
+
+  gap: 29px;
+  grid-template-columns: repeat(auto-fill, max(260px));
 
   @media (min-width: $vp-768) {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2px;
-    row-gap: 55px;
     max-width: 699px;
+
     font-size: 20px;
     line-height: 22px;
+    column-gap: 2px;
+
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 55px;
   }
 }
 
 .advantages__item {
-  padding-top: 54px;
   position: relative;
+
+  padding-top: 54px;
 
   @media (min-width: $vp-768) {
     padding-top: 56px;
@@ -46,26 +51,32 @@
   &::before {
     content: "";
     position: absolute;
-    width: 33px;
-    height: 38px;
     top: 0;
     left: 8px;
+
+    width: 33px;
+    height: 38px;
+
     background-image: url("../../img/svg/flower.svg");
     background-repeat: no-repeat;
   }
 
   &--money::before {
+    left: 0;
+
     width: 47px;
     height: 27px;
-    left: 0;
+
     background-image: url("../../img/svg/money.svg");
   }
 
   &--heart::before {
+    top: 5px;
+    left: 7px;
+
     width: 34px;
     height: 27px;
-    left: 7px;
-    top: 5px;
+
     background-image: url("../../img/svg/heart.svg");
   }
 
@@ -77,10 +88,12 @@
     }
 
     &::before {
+      top: 2px;
+      left: 3px;
+
       width: 35px;
       height: 34px;
-      left: 3px;
-      top: 2px;
+
       background-image: url("../../img/svg/ball.svg");
     }
   }
@@ -93,10 +106,12 @@
     }
 
     &::before {
+      top: 2px;
+      left: -6px;
+
       width: 55px;
       height: 23px;
-      left: -6px;
-      top: 2px;
+
       background-image: url("../../img/svg/rocket.svg");
     }
   }
@@ -109,11 +124,13 @@
     }
 
     &::before {
+      left: 3px;
+
+      order: 1;
       width: 33px;
       height: 32px;
-      left: 3px;
+
       background-image: url("../../img/svg/present.svg");
-      order: 1;
     }
   }
 }

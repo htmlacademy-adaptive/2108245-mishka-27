@@ -94,11 +94,6 @@
   transition: border-color 0.3s;
 }
 
-.modal__label:focus-within .modal__input:checked ~ .modal__radio {
-  outline: 2px solid $color-downy-3;
-  outline-offset: 2px;
-}
-
 .modal__label:hover .modal__radio {
   border: 2px solid rgba($color-charcoal, 0.3);
   transition: border-color 0.3s;

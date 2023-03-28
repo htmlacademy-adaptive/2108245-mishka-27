@@ -1,9 +1,10 @@
 .title {
-  font-family: $ff-open-sans;
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 30px;
   margin: 0;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: $ff-open-sans;
   color: $color-default-black;
 
   @media (min-width: $vp-768) {

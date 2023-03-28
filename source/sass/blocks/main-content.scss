@@ -68,6 +68,18 @@
   @media (min-width: $vp-1150) {
     margin-bottom: 127px;
   }
+
+  &--form {
+    margin-bottom: 18px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 67px;
+    }
+
+    @media (min-width: $vp-1150) {
+      margin-bottom: 114px;
+    }
+  }
 }
 
 .main-content__catalog {
@@ -91,5 +103,13 @@
 
   @media (min-width: $vp-1150) {
     margin-bottom: 103px;
+  }
+}
+
+.main-content__order {
+  margin-bottom: 55px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 50px;
   }
 }

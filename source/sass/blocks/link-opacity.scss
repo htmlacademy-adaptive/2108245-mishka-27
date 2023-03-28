@@ -1,6 +1,7 @@
 .link-opacity {
-  transition: opacity 0.3s ease-in-out;
   outline: none;
+
+  transition: opacity 0.3s ease-in-out;
 
   &:hover {
     opacity: 0.6;

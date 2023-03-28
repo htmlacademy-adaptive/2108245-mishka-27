@@ -206,6 +206,7 @@
 
   @media (min-width: $vp-768) {
     transform: translateY(-2px);
+
     gap: 5px;
   }
 
@@ -216,13 +217,13 @@
 
 .feedback__button {
   position: relative;
-  cursor: pointer;
 
   width: 100%;
   height: 52px;
 
   background-color: transparent;
   border: 1px solid $color-whisper-1;
+  cursor: pointer;
 
   @media (min-width: $vp-768) {
     align-self: self-end;
