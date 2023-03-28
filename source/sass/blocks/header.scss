@@ -10,6 +10,12 @@
     background-color: $color-snow;
     border-bottom: none;
   }
+
+  &--inner {
+    @media (min-width: $vp-768) {
+      background-color: $color-white-smoke-1;
+    }
+  }
 }
 
 .header__nav {
@@ -488,13 +494,5 @@
     padding: 20px 0;
 
     text-align: end;
-  }
-}
-
-.header__nav--inner .header__site-list,
-.header__nav--inner .header__user-list,
-.header__nav--inner .header__news-list {
-  &::before {
-    background-color: $color-white-smoke-1;
   }
 }
