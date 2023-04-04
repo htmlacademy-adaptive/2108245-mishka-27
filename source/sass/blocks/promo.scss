@@ -10,6 +10,8 @@
   }
 
   @media (min-width: $vp-1150) {
+
+    padding-top: 61px;
     min-height: 732px;
   }
 
@@ -43,8 +45,6 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding-top: 61px;
-
     gap: 11px;
     grid-template-columns: 164px 1fr;
   }

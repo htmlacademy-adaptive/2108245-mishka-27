@@ -1,35 +1,27 @@
 .video {
-  max-width: 550px;
-  margin-right: auto;
-  margin-left: auto;
-
   transition: box-shadow 0.3s;
-
-  @media (min-width: $vp-768) {
-    max-width: 813px;
-  }
-
-  @media (min-width: $vp-1150) {
-    max-width: unset;
-  }
 }
 
 .video__container {
   position: relative;
 
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 22px 0 33px 0;
 
   border: 1px solid $color-whisper-1;
-
 
   @media (min-width: $vp-768) {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 813px;
     padding: 497px 41px 46px 41px;
   }
 
   @media (min-width: $vp-1150) {
+    max-width: unset;
     min-height: 455px;
     padding: 47px 57px 60px 762px;
   }

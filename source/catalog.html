@@ -84,7 +84,7 @@
         <h2 class="visually-hidden">Список товаров.</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
+            <a class="catalog__image-link link-opacity" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp 2x">
@@ -114,7 +114,7 @@
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
+            <a class="catalog__image-link link-opacity" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/basket-desktop.webp 1x, img/basket-desktop@2x.webp 2x">
@@ -144,7 +144,7 @@
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
+            <a class="catalog__image-link link-opacity" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/big-basket-desktop.webp 1x, img/big-basket-desktop@2x.webp 2x">
@@ -177,34 +177,32 @@
         </ul>
       </section>
 
-      <div class="container">
-        <section class="main-content__video video">
-          <div class="video__container">
-            <h2 class="video__title">Процесс производства</h2>
-            <div class="video__wrapper">
-              <div class="video__inner">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1150px)"
-                    srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-                  <source media="(min-width: 1150px)"
-                    srcset="img/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-                  <img class="video__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260"
-                    height="150" alt="Видео производства вязаной корзинки.">
-                </picture>
-                <a class="video__play" href="#" aria-label="Запустить показ видео."></a>
-              </div>
+      <section class="main-content__video video container">
+        <div class="video__container">
+          <h2 class="video__title">Процесс производства</h2>
+          <div class="video__wrapper">
+            <div class="video__inner">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)"
+                  srcset="img/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260"
+                  height="150" alt="Видео производства вязаной корзинки.">
+              </picture>
+              <a class="video__play" href="#" aria-label="Запустить показ видео."></a>
             </div>
-            <p class="video__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное
-              видео
-              о&nbsp;том, как появляются наши товары.</p>
-            <a class="video__button button" href="form.html">Сделать заказ</a>
           </div>
-        </section>
-      </div>
+          <p class="video__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное
+            видео
+            о&nbsp;том, как появляются наши товары.</p>
+          <a class="video__button button" href="form.html">Сделать заказ</a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

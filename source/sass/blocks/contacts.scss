@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: $vp-1150) {
-    padding: 0 577px 0 174px;
+    padding: 79px 577px 0 174px;
   }
 
   &::before {
@@ -16,11 +16,10 @@
       width: 47px;
       height: 81px;
 
-      background-image: url("../../img/svg/flag.svg");
+      background-image: url("../img/svg/flag.svg");
     }
   }
 }
-
 
 .contacts__title {
   max-width: 549px;
@@ -36,7 +35,7 @@
 
   @media (min-width: $vp-1150) {
     margin-bottom: 34px;
-    padding: 79px 0 0 0;
+    padding: 0;
   }
 
   &::before {
@@ -49,7 +48,7 @@
       width: 47px;
       height: 81px;
 
-      background-image: url("../../img/svg/flag.svg");
+      background-image: url("../img/svg/flag.svg");
     }
 
     @media (min-width: $vp-1150) {
@@ -163,16 +162,21 @@
 
 .contacts__map-wrapper {
   position: relative;
-
-  padding-top: 496px;
+  height: 454px;
+  margin-bottom: 42px;
 
   @media (min-width: $vp-768) {
-    padding-top: 512px;
+    height: 457px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $vp-1150) {
-    position: static;
-
+    height: 100%;
+    position: absolute;
+    width: 527px;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
     padding-top: 0;
   }
 }
@@ -187,7 +191,7 @@
   width: 100vw;
   min-width: $vp-320;
   max-width: unset;
-  height: 454px;
+  height: 100%;
 
   background-color: $color-whisper-1;
   border: none;
@@ -196,15 +200,13 @@
 
   @media (min-width: $vp-768) {
     left: -50px;
-
-    height: 457px;
   }
 
   @media (min-width: $vp-1150) {
     right: 0;
     left: unset;
 
-    width: 527px;
+    width: 100%;
     height: 100%;
   }
 }

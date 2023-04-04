@@ -3,11 +3,11 @@
 
   padding: 71px 0 0 0;
 
-  background-color: $color-snow;
+  background-color: $color-white-smoke-3;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% -19px;
-  background-size: $vp-320;
+  background-size: $vp-320, 100%, contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -18,7 +18,7 @@
 
     background-image: url("../img/hero-tablet.jpg");
     background-position: top -66px left 50%;
-    background-size: $vp-768;
+    background-size: $vp-768, 100%, contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -29,7 +29,7 @@
     padding-top: 93px;
 
     background-image: url("../img/hero-desktop.jpg");
-    background-size: $vp-1150;
+    background-size: $vp-1150, 100%, contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -182,7 +182,6 @@
       height: 60px;
 
       background-image: url("../img/svg/toy.svg");
-
 
       @media (min-width: $vp-768) {
         top: 31px;

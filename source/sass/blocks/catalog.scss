@@ -1,21 +1,17 @@
 .catalog__list {
   display: grid;
-  justify-content: center;
-  margin: 0;
+  max-width: 550px;
+  margin: 0 auto;
   padding: 0;
 
   list-style-type: none;
 
   gap: 30px;
-  grid-template-columns: repeat(auto-fill, 260px);
 
   @media (min-width: $vp-768) {
     max-width: 813px;
-    margin-right: auto;
-    margin-left: auto;
 
     gap: 53px;
-    grid-template-columns: unset;
   }
 
   @media (min-width: $vp-1150) {
