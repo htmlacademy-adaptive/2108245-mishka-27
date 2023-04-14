@@ -4,15 +4,17 @@
   max-width: 385px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 42px;
 
   @media (min-width: $vp-768) {
     max-width: unset;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $vp-1150) {
-
-    padding-top: 61px;
     min-height: 732px;
+    padding-top: 61px;
+    padding-bottom: 96px;
   }
 
   &::after {

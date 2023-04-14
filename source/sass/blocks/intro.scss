@@ -1,8 +1,6 @@
 .intro {
   position: relative;
 
-  padding: 71px 0 0 0;
-
   background-color: $color-white-smoke-3;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
@@ -14,11 +12,35 @@
   }
 
   @media (min-width: $vp-768) {
+    padding-top: 0;
+
+    background-image: none;
+
+    @media (min-width: $vp-1150) {
+      padding-top: 0;
+
+      background-image: none;
+    }
+  }
+}
+
+.intro__container {
+  padding-top: 71px;
+
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+
+  @media (min-width: $vp-768) {
     padding-top: 90px;
 
     background-image: url("../img/hero-tablet.jpg");
-    background-position: top -66px left 50%;
-    background-size: $vp-768, 100%, contain;
+    background-position: top -66px center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -29,7 +51,6 @@
     padding-top: 93px;
 
     background-image: url("../img/hero-desktop.jpg");
-    background-size: $vp-1150, 100%, contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");

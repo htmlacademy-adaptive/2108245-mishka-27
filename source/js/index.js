@@ -1,5 +1,3 @@
-/*Бургер-меню*/
-
 const header = document.querySelector('.header');
 const navToggle = document.querySelector('.header__nav-toggle');
 

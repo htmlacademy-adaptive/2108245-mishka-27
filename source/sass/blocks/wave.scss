@@ -1,16 +1,6 @@
 .wave {
   position: relative;
 
-  padding-bottom: 42px;
-
-  @media (min-width: $vp-768) {
-    padding-bottom: 69px;
-  }
-
-  @media (min-width: $vp-1150) {
-    padding-bottom: 96px;
-  }
-
   &::before {
     content: "";
     position: absolute;

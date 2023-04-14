@@ -18,6 +18,7 @@
 
 <body>
   <div class="wrapper">
+    <!-- К header добавить класс no-js, если скрипты отключены -->
     <header class="header no-js header--inner">
       <div class="container">
         <nav class="header__nav">
@@ -87,7 +88,7 @@
 
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="order__form-group">
-            <legend class="order__form-legend">Тип</legend>
+            <h2 class="order__form-legend"><span class="order__legend-text">Тип</span></h2>
             <ul class="order__form-list">
               <li class="order__item">
                 <label class="order__label">
@@ -108,7 +109,7 @@
           </fieldset>
 
           <fieldset class="order__form-group order__form-group--color order__color-background">
-            <legend class="order__form-legend">Цвет</legend>
+            <h2 class="order__form-legend"><span class="order__legend-text">Цвет</span></h2>
             <ul class="order__form-list">
               <li class="order__item order__item--color">
                 <label class="order__label">
@@ -156,7 +157,7 @@
           </fieldset>
 
           <fieldset class="order__form-group">
-            <legend class="order__form-legend">Фио</legend>
+            <h2 class="order__form-legend"><span class="order__legend-text">Фио</span></h2>
             <ul class="order__form-list">
               <li class="order__item order__item--name">
                 <label class="order__label order__label--urgent-input">
@@ -181,7 +182,7 @@
 
           <div class="order__group-wrapper order__color-background">
             <fieldset class="order__form-group order__form-group--without-label">
-              <legend class="order__form-legend">Тел</legend>
+              <h2 class="order__form-legend"><span class="order__legend-text">Тел</span></h2>
               <label class="order__label order__label--urgent-input">
                 <input class="order__input order__input--with-icon" type="text" name="phone"
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Введите ваш номер телефона." required>
@@ -192,7 +193,8 @@
             </fieldset>
 
             <fieldset class="order__form-group order__form-group--without-label">
-              <legend class="order__form-legend order__form-legend--not-first">E-mail</legend>
+              <h2 class="order__form-legend order__form-legend--not-first"><span
+                  class="order__legend-text">E-mail</span></h2>
               <label class="order__label order__label--urgent-input">
                 <input class="order__input order__input--with-icon" type="email" name="email" placeholder="Ваш Email*"
                   aria-label="Введите ваш e-mail." required>
@@ -204,7 +206,7 @@
           </div>
 
           <fieldset class="order__form-group order__form-group--textarea">
-            <legend class="order__form-legend">Доп</legend>
+            <h2 class="order__form-legend"><span class="order__legend-text">Доп</span></h2>
             <label class="order__label order__label--urgent-input">
               <textarea class="order__input order__input--textarea" name="additional"
                 placeholder="Опишите все ваши пожелания к заказу"
