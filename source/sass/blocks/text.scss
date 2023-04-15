@@ -5,14 +5,14 @@
     font-size: 17px;
     line-height: 30px;
   }
-}
 
-.text--input {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
+  &--input {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
 
-  @media (min-width: $vp-768) {
-    font-size: 19px;
+    @media (min-width: $vp-768) {
+      font-size: 19px;
+    }
   }
 }

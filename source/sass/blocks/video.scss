@@ -58,14 +58,10 @@
 
   &:hover::before {
     box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
-
-    transition: box-shadow 0.3s;
   }
 
   &:focus-within::before {
     box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
-
-    transition: box-shadow 0.3s;
   }
 }
 
@@ -167,7 +163,6 @@
   @media (min-width: $vp-1150) {
     height: 100%;
 
-    aspect-ratio: 683/455;
     object-fit: cover;
   }
 }
@@ -194,8 +189,6 @@
   &:hover {
     width: 121px;
     height: 92px;
-
-    transition: width 0.3s, opacity 0.3s, height 0.3s;
   }
 
   &:active,
@@ -204,8 +197,6 @@
     height: 62px;
 
     opacity: 0.3;
-
-    transition: width 0.3s, opacity 0.3s, height 0.3s;
   }
 
   &:disabled {

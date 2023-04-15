@@ -13,9 +13,7 @@
   }
 
   &::before {
-    @media (min-width: $vp-768) {
-      transform: translateX(9px);
-    }
+    transform: translateX(-2px);
 
     @media (min-width: $vp-1150) {
       display: none;
@@ -200,7 +198,7 @@
 
 .feedback__pagination {
   display: grid;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   grid-template-columns: repeat(2, 1fr);
 

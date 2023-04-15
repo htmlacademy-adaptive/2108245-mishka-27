@@ -74,14 +74,10 @@
 
 .catalog__item:hover .catalog__product-wrapper {
   box-shadow: 0 6px 10px rgba($color-default-black, 0.1);
-
-  transition: box-shadow 0.3s;
 }
 
 .catalog__item:focus-within .catalog__product-wrapper {
   box-shadow: 0 3px 5px rgba($color-default-black, 0.1);
-
-  transition: box-shadow 0.3s;
 }
 
 .catalog__product-title {
@@ -162,8 +158,6 @@
   transform: translateX(2px);
   cursor: pointer;
 
-  transition: color 0.3;
-
   &::before {
     content: "";
     position: absolute;
@@ -179,15 +173,11 @@
 
   &:hover {
     color: $color-downy-1;
-
-    transition: color 0.3;
   }
 
   &:focus,
   &:active {
     color: rgba($color-downy-1, 0.3);
-
-    transition: color 0.3;
   }
 
   &:disabled {
@@ -195,4 +185,8 @@
 
     pointer-events: none;
   }
+}
+
+.catalog__button-icon {
+  transition: color 0.3s;
 }

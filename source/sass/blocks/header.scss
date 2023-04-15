@@ -316,7 +316,8 @@
     display: flex;
     flex-wrap: wrap;
     max-width: calc(100% - 200px);
-    height: 100%;
+    height: unset;
+    min-height: 88px;
     margin-left: auto;
 
     transform: translateX(31px);
@@ -359,6 +360,7 @@
 .header__user-item {
   @media (min-width: $vp-768) {
     max-width: 296px;
+    height: unset;
 
     border-left: 1px solid $color-whisper-1;
   }
@@ -400,12 +402,14 @@
   }
 }
 
+.header__user-text {
+  transition: opacity 0.3s, color 0.3s;
+}
+
 .header__user-link:hover .header__user-icon {
   color: $color-downy-1;
 
   opacity: 1;
-
-  transition: opacity 0.3s, color 0.3s;
 }
 
 .header__user-link:active .header__user-icon,
@@ -413,21 +417,15 @@
   color: $color-downy-1;
 
   opacity: 0.3;
-
-  transition: opacity 0.3s, color 0.3s;
 }
 
 .header__user-link:hover .header__user-text {
   opacity: 0.6;
-
-  transition: opacity 0.3s;
 }
 
 .header__user-link:active .header__user-text,
 .header__user-link:focus .header__user-text {
   opacity: 0.3;
-
-  transition: opacity 0.3s;
 }
 
 .header__user-text--search {

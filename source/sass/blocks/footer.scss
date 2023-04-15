@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
   margin-top: auto;
-
   padding-bottom: 23px;
 
   background-color: $color-white-smoke-1;
@@ -46,8 +45,6 @@
 
   &:hover {
     color: $color-puerto-rico-2;
-
-    transition: color 0.3s, opacity 0.3s;
   }
 
   &:active,
@@ -55,8 +52,6 @@
     color: $color-puerto-rico-2;
 
     opacity: 0.3;
-
-    transition: color 0.3s, opacity 0.3s;
   }
 }
 
@@ -86,6 +81,7 @@
 .footer__social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-end;
   align-self: center;
   margin: 0 auto -15px auto;
@@ -127,8 +123,6 @@
 
   &:hover {
     color: $color-puerto-rico-2;
-
-    transition: color 0.3s, opacity 0.3s;
   }
 
   &:active,
@@ -136,8 +130,6 @@
     color: $color-puerto-rico-2;
 
     opacity: 0.3;
-
-    transition: color 0.3s, opacity 0.3s;
   }
 }
 
@@ -150,21 +142,13 @@
   line-height: 18px;
   color: $color-default-black;
 
-  transition: opacity 0.3s;
-
   pointer-events: none;
 
   @media (min-width: $vp-768) {
+    max-width: unset;
     padding-top: 5px;
 
     justify-self: flex-end;
-  }
-
-  &:active,
-  &:focus {
-    opacity: 0.3;
-
-    transition: opacity 0.3s;
   }
 }
 
@@ -176,6 +160,10 @@
 
   @media (min-width: $vp-768) {
     margin-right: 28px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-right: 30px;
   }
 }
 
@@ -191,8 +179,6 @@
 
 .footer__copyright:hover .footer__academy-icon {
   color: $color-puerto-rico-2;
-
-  transition: color 0.3s, opacity 0.3s;
 }
 
 .footer__copyright:focus .footer__academy-icon,
@@ -200,6 +186,4 @@
   color: $color-puerto-rico-2;
 
   opacity: 0.3;
-
-  transition: color 0.3s, opacity 0.3s;
 }

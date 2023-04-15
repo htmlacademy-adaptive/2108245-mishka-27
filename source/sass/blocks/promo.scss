@@ -63,15 +63,16 @@
 
   @media (min-width: $vp-768) {
     max-width: 126px;
-    padding-top: 3px;
+    padding-top: 6px;
 
+    line-height: 17px;
     text-align: center;
 
     justify-self: self-end;
   }
 
   @media (min-width: $vp-1150) {
-    padding-top: 5px;
+    padding-top: 8px;
 
     justify-self: center;
   }

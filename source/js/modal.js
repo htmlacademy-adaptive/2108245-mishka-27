@@ -1,16 +1,16 @@
-const modalContainer = document.querySelector(".modal");
+const modalContainer = document.querySelector('.modal');
 const modalCloseButton = document.querySelector('.modal__submit');
 
 const openModal = () => {
-  modalContainer.classList.add("is-open");
-  document.addEventListener("keydown", onDocumentKeydown);
-  modalContainer.addEventListener("click", onModalClick);
+  modalContainer.classList.add('is-open');
+  document.addEventListener('keydown', onDocumentKeydown);
+  modalContainer.addEventListener('click', onModalClick);
 }
 
 const closeModal = () => {
-  modalContainer.classList.remove("is-open");
-  document.removeEventListener("keydown", onDocumentKeydown);
-  modalContainer.removeEventListener("click", onModalClick);
+  modalContainer.classList.remove('is-open');
+  document.removeEventListener('keydown', onDocumentKeydown);
+  modalContainer.removeEventListener('click', onModalClick);
 }
 
 modalCloseButton.addEventListener('click', (evt) => {

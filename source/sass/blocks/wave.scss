@@ -5,7 +5,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: calc(-100vw - 12px);
+    left: calc(-100vw + 2px);
 
     width: 250vw;
     min-width: 320px;
@@ -19,7 +19,7 @@
       height: 17px;
 
       background-size: 772px 17px;
-      transform: translateX(-1px);
+      transform: translateX(-15px);
     }
 
     @media (min-width: $vp-1150) {
@@ -32,39 +32,33 @@
       transform: unset;
     }
   }
-}
 
-.wave--white {
-  position: relative;
+  &--white {
+    &::before {
+      display: none;
 
-  &::before {
-    display: none;
+      @media (min-width: $vp-768) {
+        bottom: -12px;
+        left: 1px;
+        z-index: 2;
 
-    @media (min-width: $vp-768) {
-      content: "";
-      position: absolute;
-      bottom: -12px;
-      left: 1px;
-      z-index: 2;
+        display: block;
+        width: 100vw;
+        height: 24px;
 
-      display: block;
-      width: 100vw;
-      min-width: 320px;
-      height: 24px;
+        background-image: url("../img/svg/wave-white.svg");
+        background-size: 770px 24px;
+        transform: translateX(-1px);
+      }
 
-      background-image: url("../img/svg/wave-white.svg");
-      background-repeat: repeat-x;
-      background-position: center;
-      background-size: 770px 24px;
-    }
+      @media (min-width: $vp-1150) {
+        bottom: -20px;
+        left: 0;
 
-    @media (min-width: $vp-1150) {
-      bottom: -20px;
-      left: 0;
+        height: 39px;
 
-      height: 39px;
-
-      background-size: 1250px 39px;
+        background-size: 1250px 39px;
+      }
     }
   }
 }

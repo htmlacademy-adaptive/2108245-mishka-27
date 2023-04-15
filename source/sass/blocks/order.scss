@@ -51,6 +51,8 @@
   }
 
   &--without-label {
+    padding-top: 1px;
+
     @media (min-width: $vp-768) {
       padding-top: 0;
       padding-bottom: 24px;
@@ -58,23 +60,28 @@
   }
 
   &--textarea {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
 
     @media (min-width: $vp-768) {
       margin-bottom: 0;
+      padding-top: 53px;
+    }
+
+    @media (min-width: $vp-1150) {
+      padding-bottom: 46px;
     }
   }
+}
 
-  .order__group-wrapper &--without-label:first-child {
-    @media (min-width: $vp-768) {
-      padding-top: 50px;
-    }
+.order__group-wrapper .order__form-group--without-label:first-child {
+  @media (min-width: $vp-768) {
+    padding-top: 50px;
   }
+}
 
-  .order__group-wrapper &--without-label:last-child {
-    @media (min-width: $vp-768) {
-      padding-bottom: 50px;
-    }
+.order__group-wrapper .order__form-group--without-label:last-child {
+  @media (min-width: $vp-768) {
+    padding-bottom: 50px;
   }
 }
 
@@ -139,13 +146,17 @@
   }
 }
 
+.order__form-group--textarea .order__form-legend {
+  margin-bottom: 27px;
+}
+
 .order__legend-text {
   @media (max-width: ($vp-768 - 1px)) {
     z-index: 1;
 
     display: inline-flex;
     max-width: 50%;
-    padding-right: 15px;
+    padding-right: 23px;
 
     background-color: $color-default-white;
   }
@@ -308,8 +319,6 @@
 .order__label:hover .order__input-radio,
 .order__label:hover .order__input-checkbox {
   border-color: $color-downy-3;
-
-  transition: border 0.3s;
 }
 
 .order__label:focus-within .order__input-radio,
@@ -317,8 +326,6 @@
 .order__label:focus-within .order__input-checkbox,
 .order__label:active .order__input-checkbox {
   border-color: rgba($color-default-black, 0.3);
-
-  transition: border 0.3s;
 }
 
 .order__value {
@@ -442,10 +449,10 @@
   }
 
   &--with-icon {
-    padding-right: 50px;
+    padding: 15px 50px 16px 0;
 
     @media (min-width: $vp-768) {
-      padding-right: 69px;
+      padding: 13px 69px 15px 16px;
     }
 
     @media (min-width: $vp-1150) {
@@ -461,6 +468,10 @@
     transform: translateY(-3px);
 
     resize: none;
+
+    @media (min-width: $vp-768) {
+      padding: 16px 14px;
+    }
   }
 
   &:hover,
@@ -468,8 +479,6 @@
   &:active,
   &:focus {
     border-color: $color-downy-3;
-
-    transition: border 0.3s;
   }
 
   &:disabled,
@@ -486,6 +495,8 @@
   right: 7px;
 
   color: rgba($color-default-black, 0.2);
+
+  transition: color 0.3s;
 
   @media (min-width: $vp-768) {
     right: 26px;
@@ -541,7 +552,7 @@
   @media (min-width: $vp-768) {
     order: 1;
     margin-bottom: 0;
-    padding-top: 15px;
+    padding-top: 12px;
 
     font-size: 17px;
     line-height: 30px;
@@ -552,6 +563,8 @@
 .order__submit {
   width: 100%;
   max-width: 300px;
+
+  font-size: 17px;
 
   @media (min-width: $vp-768) {
     max-width: 230px;

@@ -73,7 +73,7 @@
   @media (min-width: $vp-1150) {
     display: block;
     max-width: unset;
-    margin-bottom: 84px;
+    margin-bottom: 85px;
   }
 }
 
@@ -126,6 +126,8 @@
     display: inline-flex;
     margin-right: auto;
 
+    transition: color 0.3s;
+
     &::before {
       content: "";
       position: absolute;
@@ -137,8 +139,14 @@
 
       background-color: $color-downy-3;
 
+      transition: color 0.3s;
+
       @media (min-width: $vp-768) {
         bottom: -1px;
+      }
+
+      @media (min-width: $vp-1150) {
+        bottom: -6px;
       }
     }
 
@@ -162,8 +170,9 @@
 
 .contacts__map-wrapper {
   position: relative;
+
   height: 454px;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 
   @media (min-width: $vp-768) {
     height: 457px;
@@ -171,11 +180,12 @@
   }
 
   @media (min-width: $vp-1150) {
-    height: 100%;
     position: absolute;
-    width: 527px;
-    right: 0;
     top: 0;
+    right: 0;
+
+    width: 527px;
+    height: 100%;
     margin-bottom: 0;
     padding-top: 0;
   }

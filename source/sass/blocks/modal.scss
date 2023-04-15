@@ -104,22 +104,16 @@
 
 .modal__label:hover .modal__input:checked ~ .modal__radio {
   border: 2px solid $color-puerto-rico-2;
-
-  transition: border-color 0.3s;
 }
 
 .modal__label:hover .modal__radio {
   border: 2px solid rgba($color-charcoal, 0.3);
-
-  transition: border-color 0.3s;
 }
 
 .modal__label:active .modal__radio,
 .modal__label:focus-within .modal__radio,
 .modal__input:checked + .modal__radio {
   border: 2px solid $color-downy-3;
-
-  transition: border-color 0.3s;
 }
 
 .modal__submit {
@@ -147,8 +141,6 @@
 
   &:hover {
     background-color: $color-puerto-rico-2;
-
-    transition: background-color 0.3s;
   }
 
   &:active,
@@ -156,8 +148,6 @@
     color: rgba($color-default-white, 0.3);
 
     background-color: $color-puerto-rico-2;
-
-    transition: background-color 0.3s;
   }
 
   &:disabled {

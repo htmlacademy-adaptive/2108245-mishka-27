@@ -20,7 +20,7 @@
   outline: none;
   cursor: pointer;
 
-  transition: background-size 0.3s, background-position 0.3s 0.3s, color 0.6s;
+  transition: background-size 0.2s, background-position 0.2s 0.2s, color 0.6s;
 
   @media (min-width: $vp-768) {
     font-size: 17px;
@@ -32,7 +32,7 @@
     background-position: 100%;
     background-size: 100% 100%;
 
-    transition: background-size 0.3s 0.3s, background-position 0.3s, color 0.6s;
+    transition: background-size 0.2s 0.2s, background-position 0.2s, color 0.6s;
   }
 
   &:active,
@@ -42,7 +42,7 @@
     background-position: 100%;
     background-size: 100% 100%;
 
-    transition: background-size 0.3s 0.3s, background-position 0.3s, color 0.6s;
+    transition: background-size 0.2s 0.2s, background-position 0.2s, color 0.6s;
   }
 
   &:disabled {

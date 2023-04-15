@@ -8,7 +8,7 @@
   <meta name="description" content="Mishka - магазин вязаных вещей и игрушек ручной работы.">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="fonts/open-sans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/open-sans_bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -22,7 +22,8 @@
     <header class="header no-js header--inner">
       <div class="container">
         <nav class="header__nav">
-          <a class="header__logo-link link-opacity" href="index.html">
+          <a class="header__logo-link link-opacity" href="index.html"
+            aria-label="Переход на главную страницу магазина.">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -85,7 +86,8 @@
         <h2 class="visually-hidden">Список товаров.</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__image-link link-opacity" href="#">
+            <a class="catalog__image-link link-opacity" href="#"
+              aria-label="Перейти на страницу товара Зайчик-попрыгайчик.">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp 2x">
@@ -115,7 +117,8 @@
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image-link link-opacity" href="#">
+            <a class="catalog__image-link link-opacity" href="#"
+              aria-label="Перейти на страницу товара Корзинка для белья.">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/basket-desktop.webp 1x, img/basket-desktop@2x.webp 2x">
@@ -145,7 +148,8 @@
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image-link link-opacity" href="#">
+            <a class="catalog__image-link link-opacity" href="#"
+              aria-label="Перейти на страницу товара Большая корзинка для игрушек.">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/big-basket-desktop.webp 1x, img/big-basket-desktop@2x.webp 2x">
@@ -209,8 +213,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo-link" href="index.html">
-            <span class="visually-hidden">Логотип сайта Mishka.</span>
+          <a class="footer__logo-link" href="index.html" aria-label="Переход на главную страницу магазина.">
             <svg class="footer__logo" width="102" height="34">
               <use xlink:href="img/sprite/sprite.svg#logo-footer"></use>
             </svg>
@@ -218,24 +221,22 @@
           <div class="footer__social-wrapper">
             <ul class="footer__social">
               <li class="footer__social-item">
-                <a class="footer__social-link" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Мы во Вконтакте.</span>
+                <a class="footer__social-link" href="https://vk.com/htmlacademy" aria-label="Мы во Вконтакте.">
                   <svg width="28" height="17">
                     <use xlink:href="img/sprite/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Мы на Youtube.</span>
+                <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru"
+                  aria-label="Мы на Youtube.">
                   <svg width="25" height="19">
                     <use xlink:href="img/sprite/sprite.svg#youtube"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="tg://resolve?domain=htmlacademy">
-                  <span class="visually-hidden">Мы в Telegram.</span>
+                <a class="footer__social-link" href="tg://resolve?domain=htmlacademy" aria-label="Мы в Telegram.">
                   <svg width="21" height="18">
                     <use xlink:href="img/sprite/sprite.svg#telegram"></use>
                   </svg>
