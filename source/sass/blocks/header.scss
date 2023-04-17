@@ -301,6 +301,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    height: unset;
     padding: 32px 15%;
   }
 }
@@ -315,16 +316,12 @@
 
     display: flex;
     flex-wrap: wrap;
-    max-width: calc(100% - 200px);
-    height: unset;
+    max-width: 381px;
+    height: 100%;
     min-height: 88px;
     margin-left: auto;
 
     transform: translateX(31px);
-  }
-
-  @media (min-width: $vp-1150) {
-    max-width: unset;
   }
 
   &::before {
@@ -377,6 +374,7 @@
 
   @media (min-width: $vp-1150) {
     padding: 33px 34px 32px 32px;
+    height: unset;
   }
 }
 
