@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+/*Глобальные стили*/
+
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/reboot.scss";
+@import "./global/utils.scss";
+
+/*Стили кнопок, текстов, заголовков*/
+@import "./blocks/title.scss";
+@import "./blocks/button.scss";
+@import "./blocks/text.scss";
+@import "./blocks/link-opacity.scss";
+
+/*Блоки страниц*/
+@import "./blocks/wrapper.scss";
+@import "./blocks/header.scss";
+@import "./blocks/wave.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/main-content.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/video.scss";
+@import "./blocks/order.scss";

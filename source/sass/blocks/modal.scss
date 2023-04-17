@@ -1,0 +1,158 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color-default-white, 0.9);
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+.modal__container {
+  width: 100%;
+  max-width: 410px;
+  margin: auto;
+  padding: 28px 30px 46px 30px;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-silver;
+  box-shadow: 0 5px 10px rgba($color-dark-green, 0.25);
+
+  @media (min-width: $vp-768) {
+    max-width: 566px;
+    padding: 37px 105px 46px 105px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 14px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.modal__legend {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 0;
+
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+  }
+}
+
+.modal__group-list {
+  display: grid;
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+
+  list-style-type: none;
+  column-gap: 7px;
+
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 14px;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal__radio {
+  display: block;
+  padding: 16px 10px;
+
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+
+  border: 2px solid rgba($color-charcoal, 0.1);
+
+  transition: border-color 0.3s;
+}
+
+.modal__label:hover .modal__input:checked ~ .modal__radio {
+  border: 2px solid $color-puerto-rico-2;
+}
+
+.modal__label:hover .modal__radio {
+  border: 2px solid rgba($color-charcoal, 0.3);
+}
+
+.modal__label:active .modal__radio,
+.modal__label:focus-within .modal__radio,
+.modal__input:checked + .modal__radio {
+  border: 2px solid $color-downy-3;
+}
+
+.modal__submit {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 18px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-family: $ff-open-sans;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-downy-1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-puerto-rico-2;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($color-default-white, 0.3);
+
+    background-color: $color-puerto-rico-2;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+}
