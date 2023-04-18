@@ -100,12 +100,12 @@
   margin-bottom: 21px;
 
   font-size: 13px;
+  line-height: 30px;
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
 
     font-size: $fz-default;
-    line-height: 30px;
   }
 
   @media (min-width: $vp-768) {
